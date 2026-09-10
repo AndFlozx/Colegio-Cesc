@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config';
 
 // dominio definitivo antes de publicarlo.
 export default defineConfig({
-  site: 'https://colegio-ejemplo.edu.co',
+  site: 'https://colegio-cesc.netlify.app',
   trailingSlash: 'always'
 });
