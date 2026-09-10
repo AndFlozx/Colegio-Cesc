@@ -1,0 +1,24 @@
+# Dependencias y construcciones
+node_modules/
+dist/
+
+# Caché de herramientas
+.astro/
+.npm-cache/
+.netlify/
+
+# Variables de entorno y llaves de seguridad
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Archivos de respaldo y exportaciones de Codex
+outputs/
+*.zip
+
+# Archivos basura del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini

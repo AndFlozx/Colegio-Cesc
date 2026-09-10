@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+
+<BaseLayout title="Contacto">
+  <PageHero eyebrow="Estamos para ayudarte" title="Hablemos" intro="Déjanos tu mensaje o comunícate directamente con nuestra institución." />
+  <section class="section"><div class="container contact-grid">
+    <div class="contact-details">
+      <h2>Datos de contacto</h2>
+      <p><strong>Dirección</strong><br />Barrio Aguacatal, Calle 5, Cajibío-Cauca, </p>
+      <p><strong>Teléfono</strong><br /><a href="tel:+570000000000">+57 310 503 5960</a></p>
+      <p><strong>Correo</strong><br /><a href="mailto:info@colegio-ejemplo.edu.co">cesc.cajibio@gmail.com</a></p>
+      <p><strong>Horario de atención</strong><br />Sabados, 8:00 a. m. a 3:00 p. m.</p>
+    </div>
+    <form class="contact-form" name="contacto" method="POST" action="/gracias/" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contacto" />
+      <p class="hidden"><label>No llenar este campo <input name="bot-field" /></label></p>
+      <h2>Envía un mensaje</h2>
+      <label>Nombre completo<input required name="nombre" autocomplete="name" /></label>
+      <label>Correo electrónico<input required type="email" name="email" autocomplete="email" /></label>
+      <label>Asunto<input required name="asunto" /></label>
+      <label>Mensaje<textarea required name="mensaje" rows="5"></textarea></label>
+      <button class="button" type="submit">Enviar mensaje</button>
+      <p class="form-note">El formulario funciona al desplegar el sitio en Netlify. En GitHub Pages se debe conectar un servicio de formularios.</p>
+    </form>
+  </div></section>
+</BaseLayout>

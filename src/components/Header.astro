@@ -1,0 +1,26 @@
+---
+const currentPath = Astro.url.pathname;
+const links = [
+  { href: '/', label: 'Inicio' },
+  { href: '/nosotros/', label: 'Nosotros' },
+  { href: '/admisiones/', label: 'Admisiones' },
+  { href: '/manual-de-convivencia/', label: 'Manual de convivencia' },
+  { href: '/contacto/', label: 'Contacto' }
+];
+---
+
+<header class="site-header">
+  <div class="container header-content">
+    <a class="brand" href="/" aria-label="Centro Educativo SemiPresencial Cajibio, inicio">
+      <img class="brand-logo" src="/logo.png" width="52" height="64" alt="Escudo del Centro Educativo SemiPresencial Cajibio" />
+      <span><strong>Centro Educativo SemiPresencial Cajibio</strong><small>Dios, ciencia y verdad</small></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        {links.map((link) => (
+          <li><a href={link.href} aria-current={currentPath === link.href ? 'page' : undefined}>{link.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

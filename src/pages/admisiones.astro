@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+
+<BaseLayout title="Admisiones">
+  <PageHero eyebrow="Proceso de admisión" title="Tu camino para ser parte de nuestra comunidad" intro="Esta página está lista para que publiques fechas, requisitos y el proceso oficial de matrícula." />
+  <section class="section"><div class="container">
+    <div class="cards three-columns steps">
+      <article class="info-card"><span>01</span><h2>Conoce el colegio</h2><p>Solicita información o agenda una visita institucional.</p></article>
+      <article class="info-card"><span>02</span><h2>Entrega documentos</h2><p>Presenta los requisitos definidos para el nivel al que aspira el estudiante.</p></article>
+      <article class="info-card"><span>03</span><h2>Formaliza matrícula</h2><p>Recibe la respuesta y completa el proceso en las fechas indicadas.</p></article>
+    </div>
+    <div class="notice"><h2>¿Necesitas orientación?</h2><p>Escríbenos para recibir información sobre cupos, calendario y requisitos.</p><a class="button" href="/contacto/">Hablar con admisiones</a></div>
+  </div></section>
+</BaseLayout>

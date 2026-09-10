@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Inicio" description="Portal institucional del Colegio Centro Educativo SemiPresencial Cajibio: educación, admisiones y documentos oficiales.">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Bienvenidos al Colegio Centro Educativo SemiPresencial Cajibio</p>
+        <h1>Aprender hoy para transformar el mañana.</h1>
+        <p class="lead">Una comunidad que acompaña el desarrollo académico, humano y ciudadano de cada estudiante.</p>
+        <div class="actions">
+          <a class="button" href="/admisiones/">Conoce admisiones</a>
+          <a class="button button-outline" href="/manual-de-convivencia/">Documentos institucionales</a>
+        </div>
+      </div>
+      <aside class="hero-note" aria-label="Información de atención">
+        <p class="eyebrow">Información útil</p>
+        <h2>Atención a familias</h2>
+        <p>Sabados<br /><strong>8:00 a. m. – 3:00 p. m.</strong></p>
+        <a href="/contacto/">Contáctanos →</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Nuestra propuesta</p>
+        <h2>Educación que deja huella</h2>
+      </div>
+      <div class="cards three-columns">
+        <article class="info-card"><h3>Formación integral</h3><p>Promovemos la excelencia académica junto con valores, bienestar y convivencia.</p></article>
+        <article class="info-card"><h3>Comunidad cercana</h3><p>Familias, estudiantes y docentes trabajan juntos para crear oportunidades.</p></article>
+        <article class="info-card"><h3>Mirada al futuro</h3><p>Desarrollamos habilidades para aprender, colaborar y aportar a la sociedad.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container split-content">
+      <div>
+        <p class="eyebrow">Transparencia</p>
+        <h2>Documentos al alcance de toda la comunidad</h2>
+        <p>Consulta el Manual de Convivencia, el sistema de evaluación y demás documentos institucionales en un solo lugar.</p>
+      </div>
+      <a class="button" href="/manual-de-convivencia/">Ir a documentos</a>
+    </div>
+  </section>
+</BaseLayout>

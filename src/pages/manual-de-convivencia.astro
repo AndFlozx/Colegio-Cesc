@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import DocumentCard from '../components/DocumentCard.astro';
+---
+
+<BaseLayout title="Documentos institucionales">
+  <PageHero eyebrow="Consulta pública" title="Manual de Convivencia y documentos institucionales" intro="Accede a información oficial para estudiantes, familias, docentes y la comunidad educativa." />
+  <section class="section"><div class="container narrow document-list">
+    <DocumentCard title="Manual de Convivencia" description="Derechos, deberes, acuerdos y rutas para una convivencia respetuosa." file="/documentos/manual-de-convivencia.pdf" />
+    <DocumentCard title="Sistema Institucional de Evaluación" description="Criterios, escalas y procesos de evaluación y promoción." file="/documentos/sistema-evaluacion.pdf" />
+    <DocumentCard title="Política de Protección de Datos" description="Tratamiento responsable de los datos personales de nuestra comunidad." file="/documentos/proteccion-datos.pdf" />
+    <DocumentCard title="Calendario académico" description="Fechas relevantes del año escolar, actividades y recesos." file="/documentos/calendario-academico.pdf" />
+  </div></section>
+</BaseLayout>

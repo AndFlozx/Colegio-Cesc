@@ -1,0 +1,7 @@
+Sube en esta carpeta los documentos oficiales en PDF.
+
+Nombres previstos por la plantilla:
+- manual-de-convivencia.pdf
+- sistema-evaluacion.pdf
+- proteccion-datos.pdf
+- calendario-academico.pdf

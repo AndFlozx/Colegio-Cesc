@@ -1,0 +1,28 @@
+# Se activa al habilitar Netlify Identity + Git Gateway en el panel de Netlify.
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/imagenes"
+public_folder: "/imagenes"
+
+collections:
+  - name: "documentos"
+    label: "Documentos institucionales"
+    files:
+      - label: "Información de documentos"
+        name: "informacion"
+        file: "src/content/documentos.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Contenido", name: "body", widget: "markdown" }
+  - name: "noticias"
+    label: "Noticias"
+    folder: "src/content/noticias"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Resumen", name: "description", widget: "text" }
+      - { label: "Contenido", name: "body", widget: "markdown" }
